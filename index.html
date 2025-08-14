@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <div class="title">
+                <h1 id="white-text">Generate a</h1>
+                <h1 id="green-text">random password</h1>
+                <p>Never use a insecure password again</p>
+            </div>
+            <div class="custom">
+                <div>
+                    <button class="btn"  onclick="generatePassword()">Generate Password</button>
+                </div>
+                <div class="custom-inputs">
+                    <form>
+                        <label class="input-box">Password length :</label>
+                        <input type="number" id="password-Length" min="1" max="25" step="1" value="8">
+                    </form>
+                    <p>Symbols & Numbers </p>
+                    <label class="switch">
+                        <input id="special-toogle"  type="checkbox" >
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="line">
+                <div class="password-container">
+                    <div class = "generated">
+                        <p id="password-el1"></p>
+                    </div>
+                    <div class ="generated">
+                        <p id="password-el2"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
