@@ -17,6 +17,11 @@ function getToogleValue() {
 function storePasswordLength(){
     const inputlengthEl = document.getElementById("password-Length")
      passwordLength = inputlengthEl.value
+
+     if (passwordLength > 25) {
+        alert("Error: Password length cannot be more than 25 characters.")
+            passwordLength = 25
+        }
 }
 
 function generatePassword(){
